@@ -6,7 +6,7 @@ services:
     plan: free
     repo: https://github.com/sudeepbhagat11/PaySwift
     branch: main
-    nodeVersion: 20.11.1
+    nodeVersion: 18.19.1
     buildCommand: |
       npm install &&
       npm run prisma:generate &&
