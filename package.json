@@ -7,7 +7,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:migrate": "npx prisma migrate dev --schema=db/prisma/schema.prisma",
+    "prisma:generate": "npx prisma generate --schema=db/prisma/schema.prisma"
   },
   "dependencies": {
     "@prisma/client": "^6.6.0",
@@ -37,7 +39,7 @@
     "./client": "./index.ts"
   },
   "prisma": {
-    "seed": "ts-node db/prisma/seed.ts"
+    "seed": "ts-node db/prisma/seed.ts",
   },
   "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "index.js",

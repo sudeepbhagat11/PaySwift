@@ -1,13 +1,19 @@
 {
-  "name": "@repo/db",
-  "version": "0.0.0",
-  "dependencies": {
-      "@prisma/client": "^5.11.0"
-  },
-  "devDependencies": {
-      "prisma": "5.11.0"
-  },
-  "exports": {
-      "./client": "./index.ts"
-  }
+    "name": "@repo/db",
+    "version": "0.0.0",
+    "dependencies": {
+        "@prisma/client": "^5.11.0"
+    },
+    "devDependencies": {
+        "prisma": "5.11.0"
+    },
+    "exports": {
+        "./client": "./index.ts"
+    },
+    "scripts": {
+        "prisma:migrate": "npx prisma migrate dev --schema=db/prisma/schema.prisma",
+        "prisma:generate": "npx prisma generate --schema=db/prisma/schema.prisma",
+        "build": "tsc -b",
+        "start": "node dist/src/index.js"
+    }
 }
