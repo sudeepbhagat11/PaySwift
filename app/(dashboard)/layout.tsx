@@ -25,7 +25,7 @@ export default async function Layout({
             isLoggedIn={isLoggedIn} // Pass the isLoggedIn status
           />
           <SidebarItem
-            href="/transactions"
+            href="/transaction"
             icon={<TransactionsIcon />}
             title="Transactions"
             protected

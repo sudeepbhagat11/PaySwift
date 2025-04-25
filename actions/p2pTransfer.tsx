@@ -7,9 +7,10 @@ export async function p2pTransfer(to: string, amount: number) {
     const session = await getServerSession(authOptions);
     const from = session?.user?.id;
     if (!from) {
-        return {
-            message: "Error while sending"
-        };
+        // return {
+        //     message: "Error while sending"
+        // };
+        throw new Error('Error while sending');
     }
 
     const toUser = await prisma.user.findFirst({
@@ -19,9 +20,10 @@ export async function p2pTransfer(to: string, amount: number) {
     });
 
     if (!toUser) {
-        return {
-            message: "User not found"
-        };
+        // return {
+            // message: "User not found"
+            throw new Error('Receiver Invalid');
+        // };
     }
 
     await prisma.$transaction(async (tx) => {
@@ -34,7 +36,12 @@ export async function p2pTransfer(to: string, amount: number) {
 
         if (!fromBalance || fromBalance.amount < amount) {
             throw new Error('Insufficient funds');
+            
         }
+
+
+
+        
 
         // Update balances
         await tx.balance.update({
