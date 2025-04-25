@@ -15,3 +15,10 @@ services:
       npm run prisma:generate &&
       npm run build
     startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://paytmbd_owner:npg_ljbpD5d3gMIs@ep-quiet-rice-a4cg6nhr-pooler.us-east-1.aws.neon.tech/paytmbd?sslmode=require
+      - key: NEXTAUTH_URL
+        value: http://localhost:3000/
+      - key: NEXTAUTH_SECRET
+        value: token_generated
