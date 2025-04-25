@@ -1,0 +1,71 @@
+
+
+// // // {
+// // //   "compilerOptions": {
+// // //     "target": "ES2017",
+// // //     "lib": ["dom", "dom.iterable", "esnext"],
+    
+// // //     "allowJs": true,
+// // //     "skipLibCheck": true,
+// // //     "strict": true,
+// // //     "noEmit": true,
+// // //     "esModuleInterop": true,
+// // //     "allowSyntheticDefaultImports": true,
+// // //     "module": "esnext",
+// // //     "moduleResolution": "bundler",
+// // //     "resolveJsonModule": true,
+// // //     "isolatedModules": true,
+// // //     "jsx": "preserve",
+// // //     "incremental": true,
+// // //     "plugins": [
+// // //       {
+// // //         "name": "next"
+// // //       }
+// // //     ],
+// // //     "paths": {
+// // //       "@/*": ["./*"],
+// // //       "@db/*": ["../db/src/generated/*"]
+// // //     }
+// // //   },
+// // //   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+// // //   "exclude": ["node_modules"]
+// // // }
+
+
+
+
+
+// // {
+// //   "compilerOptions": {
+// //     "target": "ES2017",
+// //     "lib": ["dom", "dom.iterable", "esnext"],
+// //     "allowJs": true,
+// //     "skipLibCheck": true,
+// //     "strict": true,
+// //     "noEmit": false,  // Change this to false to allow TypeScript to emit JS files
+// //     "esModuleInterop": true,
+// //     "allowSyntheticDefaultImports": true,
+// //     "module": "esnext",
+// //     "moduleResolution": "node",  // Change from "bundler" to "node"
+// //     "resolveJsonModule": true,
+// //     "isolatedModules": true,
+// //     "jsx": "preserve",
+// //     "incremental": true,
+// //     "plugins": [
+// //       {
+// //         "name": "next"
+// //       }
+// //     ],
+// //     "paths": {
+// //       "@/*": ["./*"],
+// //       "@db/*": ["../db/src/generated/*"]
+// //     }
+// //   },
+// //   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+// //   "exclude": ["node_modules"]
+// // }
+
+
+
+
+// {
