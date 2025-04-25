@@ -54,6 +54,11 @@ export async function p2pTransfer(to: string, amount: number) {
             data: { amount: { increment: amount } },
         });
 
+
+        console.log("TX keys:", Object.keys(tx)); 
+        console.log("tx.p2pTransfer is:", tx.p2pTransfer); 
+
+
         // Create P2P transfer record
         const p2pTransferRecord = await tx.p2pTransfer.create({
             data: {
