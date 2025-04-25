@@ -14,7 +14,7 @@ services:
       npm install &&
       npm run prisma:generate &&
       npm run build
-    startCommand: npm start
+    startCommand: npm run d
     envVars:
       - key: DATABASE_URL
         value: postgresql://paytmbd_owner:npg_ljbpD5d3gMIs@ep-quiet-rice-a4cg6nhr-pooler.us-east-1.aws.neon.tech/paytmbd?sslmode=require
