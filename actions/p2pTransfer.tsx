@@ -55,8 +55,16 @@ export async function p2pTransfer(to: string, amount: number) {
         });
 
 
-        console.log("TX keys:", Object.keys(tx)); 
-        console.log("tx.p2pTransfer is:", tx.p2pTransfer); 
+        
+
+
+        console.log("Creating p2pTransfer with:", {
+            amount,
+            from,
+            toUser,
+            timestamp: new Date()
+          });
+          
 
 
         // Create P2P transfer record
@@ -68,6 +76,18 @@ export async function p2pTransfer(to: string, amount: number) {
                 timestamp: new Date(),
             }
         });
+
+
+
+
+        console.log("Creating Transaction with:", {
+            amount: p2pTransferRecord.amount,
+            type: "Debited",
+            source: "P2P",
+            to,
+            p2pTransferId: p2pTransferRecord.id
+          });
+          
 
         // Create a corresponding Transaction record
         await tx.transaction.create({
