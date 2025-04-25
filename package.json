@@ -39,7 +39,7 @@
     "./client": "./index.ts"
   },
   "prisma": {
-    "seed": "ts-node db/prisma/seed.ts",
+    "seed": "ts-node db/prisma/seed.ts"
   },
   "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "index.js",
