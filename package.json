@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npx prisma generate --schema=db/prisma/schema.prisma && npx prisma generate --schema=bank-webhook/db/prisma/schema.prisma && next build",
     "start": "next start",
     "lint": "next lint",
     "prisma:migrate": "npx prisma migrate dev --schema=db/prisma/schema.prisma",
